@@ -1,0 +1,15 @@
+*{
+  margin:0;
+  padding:0;
+}
+#particles-js{
+  background-color: black;
+  height:100px;
+  width:100%;
+}
+#particles-js p{
+  text-align: center;
+  font-size:30px;
+  color:white;
+  z-index:3;
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="nav.css">
+  <link rel="stylesheet" href="navi.css">
+  <link rel="stylesheet" href="item.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="point.css">
+  <link rel="stylesheet" href="fade.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <title>Nav Bar</title>
+</head>
+<body>
+   <header>
+    <div id="particles-js">
+    
+    </div>
+    <div class="Navbar">
+      <div class="logo"><a href="#"><img src="apshisht2.jpeg"></a></div>
+       <a href="hero" class="btn1">Home</a>
+        <a href="sui" class="btn2">Sign Up</a>
+        <a href="her" class="btn3">Dashboard</a>
+        <a href="he" class="btn4">About</a>
+      <a href="#" class="action_btn">Get Started</a>
+      <div class="toggle_btn">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+    <div class="dropdown">
+      <li><a href="hero">Home</a></li>
+        <li><a href="sui">Sign Up</a></li>
+        <li><a href="her">Dashboard</a></li>
+        <li><a href="he">About US</a></li>
+        <li><a href="#" class="action_btn">Get Started</a></li>
+    </div>
+    <div class="container">
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><img src="paperwaste.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="plastic bottle.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="glasswaste.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="ewaste.jpg" alt=""></div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+      
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+      </div>
+   </header>
+   <div class="quotation">
+    <p><q>Coming Together is a Beginning, staying<br>
+      Together is Progress, and Working Together<br>
+      is Success
+    </q></p>
+   </div>
+   <div class="fading">
+    <div class="item" data-aos="fade-up" data-aos-anchor-placement="top-center"><h3>ANCIENT</h3><i><b>3,000 B.C.</b> | The first recorded landfill is developed in Knossos, Crete (modern-day Greece), where large holes were dug into the earth to dump refuse.
+  <br><br>
+      <b>2,000 B.C.</b> | In China, simple methods of composting and recycling are developed and utilized, particularly for bronze to be used later.</i></div>
+ <div class="item" data-aos="fade-down"><h3>INDUSTRIAL</h3>    <i><b>1757</b> | Ben Franklin starts the first street cleaning service and encourages the public to dig pits in the earth to dispose of waste.
+<br><br>
+  <b>1875</b> | The Public Health Act of 1875 is passed by English Parliament, giving authority for waste collection and prevent mass scavenging. </i></div>
+ <div class="item" data-aos="fade-right"><h3>20th CENTURY</h3><i><b>1991</b> | More than 3,000 household hazardous waste programs are set up in all 50 states.
+<br><br>
+  <b>1994</b> | Federal agencies are required to buy and use recycled products. The Office of Federal Environmental Executive is created to enforce the directive.</i> </div>
+ <div class="item" data-aos="fade-left"><h3>21st CENTURY</h3><i><b>2010s</b> | Advances are made in garbage truck technology, which allows them to pack and haul up to three times more waste than previous models.
+<br><br>
+  <b>Today</b> | Americans make up less than 5% of the global population but create nearly 20% of the world’s garbage, producing over 250 million tons of trash.</i></div>
+ </div>
+   <div class="wrapper">
+    <h2>Sell By Category</h2>
+    <div class="line"></div>
+    <div class="single-service">
+      <div class="social"><i class="fa fa-file-photo-o"></i></div>
+      <span></span>
+      <h3>Service One</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta itaque laborum, mollitia error ex repellat dolores veniam recusandae dolore laudantium vero aut voluptatem iste provident vel accusantium fugit? Sit, blanditiis!</p>
+    </div>
+    <div class="single-service">
+      <div class="social"><i class="fa fa-file-laptop"></i></div>
+      <span></span>
+      <h3>Service Two</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta itaque laborum, mollitia error ex repellat dolores veniam recusandae dolore laudantium vero aut voluptatem iste provident vel accusantium fugit? Sit, blanditiis!</p>
+    </div>
+    <div class="single-service">
+      <div class="social"><i class="fa fa-file-pie-chart"></i></div>
+      <span></span>
+      <h3>Service Three</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta itaque laborum, mollitia error ex repellat dolores veniam recusandae dolore laudantium vero aut voluptatem iste provident vel accusantium fugit? Sit, blanditiis!</p>
+    </div>
+   </div>
+   <script>
+    const togglebtn = document.querySelector('.toggle_btn');
+    const togglebtnicon = document.querySelector('.toggle_btn i');
+    const dropdownmenu =document.querySelector('.dropdown');
+
+    togglebtn.onclick = function(){
+      dropdownmenu.classList.toggle('open');
+      const isopen=dropdownmenu.classList.contains('open');
+
+      togglebtnicon.classList= isopen?
+      'fa-solid fa-xmark':'fa-solid fa-bars';
+    }
+   </script>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+   <script>
+     const swiper = new Swiper('.swiper', {
+  autoplay: {
+     delay:2000,
+     disableOnInteraction: false,
+  },
+loop: true,
+
+pagination: {
+  el: '.swiper-pagination',
+  clickable: true,
+},
+navigation: {
+  nextEl: '.swiper-button-next',
+  prevEl: '.swiper-button-prev',
+},
+});
+   </script>
+    <script src="js/particles.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="fasd.js"></script>
+</body>
+</html>
