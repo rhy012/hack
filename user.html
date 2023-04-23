@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="nav.css">
+  <link rel="stylesheet" href="navi.css">
+  <link rel="stylesheet" href="point.css">
+  <link rel="stylesheet" href="use.css">
+  <title>Document</title>
+</head>
+<body>
+  <div id="particles-js">
+    
+  </div>
+  <header>
+    <div class="Navbar">
+      <div class="logo"><a href="#"><img src="apshisht2.jpeg"></a></div>
+       <a href="hero" class="btn1">Home</a>
+        <a href="sui" class="btn2">Sign Up</a>
+        <a href="her" class="btn3">Dashboard</a>
+        <a href="he" class="btn4">About</a>
+      <a href="#" class="action_btn">Get Started</a>
+      <div class="toggle_btn">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+    <div class="dropdown">
+      <li><a href="hero">Home</a></li>
+        <li><a href="sui">Sign Up</a></li>
+        <li><a href="her">Dashboard</a></li>
+        <li><a href="he">About US</a></li>
+        <li><a href="#" class="action_btn">Get Started</a></li>
+    </div>
+    <div class="wrap">
+      <form action="#">
+        <i class="fas fa-cloud-upload-alt"></i>
+        <p>Browse File to Upload</p>
+      </form>
+      <section class="progress-area">
+        <li class="row">
+          <i class="fas fa-file-alt"></i>
+          <div class="content">
+            <div class="details">
+              <span class="name">image_01.png . Uploading</span>
+              <span class="percent">50%</span>
+            </div>
+            <div class="progress-area">
+              <div class="progress"></div>
+            </div>
+          </div>
+        </li>
+      </section>
+      <section class="uploaded-area">
+        <li class="row">
+          <div class="content">
+            <i class="fas fa-file-alt"></i>
+          <div class="details">
+            <span class="name">image_01.png . Uploading</span>
+            <span class="size">70 KB</span>
+          </div>
+          </div>
+          <i class="fas fa-check"></i>
+        </li>
+      </section>
+    </div>
+    <script>
+      const togglebtn = document.querySelector('.toggle_btn');
+      const togglebtnicon = document.querySelector('.toggle_btn i');
+      const dropdownmenu =document.querySelector('.dropdown');
+  
+      togglebtn.onclick = function(){
+        dropdownmenu.classList.toggle('open');
+        const isopen=dropdownmenu.classList.contains('open');
+  
+        togglebtnicon.classList= isopen?
+        'fa-solid fa-xmark':'fa-solid fa-bars';
+      }
+     </script>
+     <script src="js/particles.min.js"></script>
+     <script src="js/app.js"></script>
+</body>
+</html>
