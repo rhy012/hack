@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+        .chatbox {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .user {
+            background-color: #f2f2f2;
+        }
+        .bot {
+            background-color: #e6ffe6;
+        }
+        .message {
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+        .input-group {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center mt-4 mb-4">Chat App</h1>
+        <div id="chat-container">
+            <!-- Chat messages will be displayed here -->
+        </div>
+        <div class="input-group">
+            <input type="text" id="message-input" class="form-control" placeholder="Enter your message">
+            <div class="input-group-append">
+                <button class="btn btn-primary" id="send-btn">Send</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#send-btn').click(function() {
+                var message = $('#message-input').val();
+                sendMessage(message);
+            });
+
+            function sendMessage(message) {
+                $.ajax({
+                    type: 'POST',
+                    url: '/api',
+                    data: {
+                        message: message
+                    },
+                    success: function(response) {
+                        addMessageToChat('bot', response);
+                    },
+                    error: function() {
+                        alert('Error sending message');
+                    }
+                });
+                addMessageToChat('user', message);
+                $('#message-input').val('');
+            }
+
+            function addMessageToChat(sender, message) {
+                var chatbox = $('<div class="chatbox"></div>');
+                var messageElem = $('<p class="message"></p>').text(message);
+                chatbox.append(messageElem);
+
+                if (sender === 'user') {
+                    chatbox.addClass('user');
+                } else {
+                    chatbox.addClass('bot');
+                }
+
+                $('#chat-container').append(chatbox);
+            }
+        });
+    </script>
+</body>
+</html>
