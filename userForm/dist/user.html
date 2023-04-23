@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="nav.css">
+  <link rel="stylesheet" href="navi.css">
+  <link rel="stylesheet" href="point.css">
+  <link rel="stylesheet" href="use.css">
+  <title>Document</title>
+</head>
+<body>
+  <div id="particles-js">
+    
+  </div>
+  <header>
+    <div class="Navbar">
+      <div class="logo"><a href="#"><img src="apshisht2.jpeg"></a></div>
+       <a href="hero" class="btn1">Home</a>
+        <a href="sui" class="btn2">Sign Up</a>
+        <a href="her" class="btn3">Dashboard</a>
+        <a href="he" class="btn4">About</a>
+      <a href="#" class="action_btn">Get Started</a>
+      <div class="toggle_btn">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+    <div class="dropdown">
+      <li><a href="hero">Home</a></li>
+        <li><a href="sui">Sign Up</a></li>
+        <li><a href="her">Dashboard</a></li>
+        <li><a href="he">About US</a></li>
+        <li><a href="#" class="action_btn">Get Started</a></li>
+    </div>
+    <div class="wrap">
+      <form action="#">
+        <i class="fas fa-cloud-upload-alt"></i>
+        <p>Browse File to Upload</p>
+      </form>
+      <section class="progress-area">
+        <li class="row">
+          <i class="fas fa-file-alt"></i>
+          <div class="content">
+            <div class="details">
+              <span class="name">image_01.png . Uploading</span>
+              <span class="percent">50%</span>
+            </div>
+            <div class="progress-area">
+              <div class="progress"></div>
+            </div>
+          </div>
+        </li>
+      </section>
+      <section class="uploaded-area">
+        <li class="row">
+          <div class="content">
+            <i class="fas fa-file-alt"></i>
+          <div class="details">
+            <span class="name">image_01.png . Uploading</span>
+            <span class="size">70 KB</span>
+          </div>
+          </div>
+          <i class="fas fa-check"></i>
+        </li>
+      </section>
+    </div>
+    <br><br>
+    <h2>Waste Seller</h2>
+    <br><br>
+    <div class="form5"><form method = "POST">
+      <label for="waste"><P>Choose a Category : </P></label>
+
+<select name="waste" id="waste">
+  <option value="Paper">Paper</option>
+  <option value="Glass">Glass</option>
+  <option value="Plastic">Plastic</option>
+  <option value="E-Waste">E-Waste</option>
+</select>
+   </form></div>
+    
+   <br><br>
+   <div class="act">
+    <h2>PAPER WASTE</h2>
+    <form id="formId" method="POST">
+      <label for="typep"><P>Type of Paper:</P></label>
+      <select name="typep" id="typep">
+        <option value="kraft">Corrugated/Kraft Paper</option>
+        <option value="news">Newspaper</option>
+        <option value="high">High-Grade Paper</option>
+        <option value="mixed">Mixed Paper</option>
+      </select><br><br>
+  <label for="weightp"><p class="wp">Weight :</p></label>
+  <input type="text" id="weightp" name="weightp"><br><br>
+  <input type="submit" value="Submit">
+    </form>
+   </div>
+   <div class="form">
+    <h2>GLASS WASTE</h2>
+    <form id="formId" method="POST">
+      <label for="typeg"><P>Type of Glass:</P></label>
+      <select name="typeg" id="typeg">
+        <option value="window">Window Glass</option>
+        <option value="wind">Wind Shield</option>
+        <option value="Drink">Drinking Glass</option>
+        <option value="mixed">Mixed Glass</option>
+      </select><br><br>
+  <label for="weightg"><p class="wg">Weight :</p></label>
+  <input type="text" id="weightg" name="weightg"><br><br>
+  <input type="submit" value="Submit">
+    </form>
+   </div>
+   <div class="form">
+    <h2>PLASTIC WASTE</h2>
+    <form id="formId" method="POST">
+      <label for="typepl"><P>Type of Plastic:</P></label>
+      <select name="typepl" id="typepl">
+        <option value="pet">Bottles of Water</option>
+        <option value="hdpe">Shampoo Bottles/Helmet</option>
+        <option value="pvc">Water Pipes</option>
+        <option value="ldpe">Shopping Bags/Trash Bag</option>
+      </select><br><br>
+  <label for="weightpl"><p class="wp">Weight :</p></label>
+  <input type="text" id="weightpl" name="weightpl"><br><br>
+  <input type="submit" value="Submit">
+    </form>
+   </div>
+   <div class="form">
+    <h2>PAPER WASTE</h2>
+    <form id="formId" method="POST">
+      <label for="typee"><P>Type of E-Waste:</P></label>
+      <select name="typee" id="typee">
+        <option value="laptop">Laptop</option>
+        <option value="computer">Computer</option>
+        <option value="mobile">Mobile</option>
+        <option value="refri">Refrigerator</option>
+        <option value="micro">MicroWave</option>
+        <option value="oth">Others</option>
+      </select><br><br>
+  <label for="weighte"><p class="wp">Weight :</p></label>
+  <input type="text" id="weighte" name="weighte"><br><br>
+  <input type="submit" value="Submit">
+    </form>
+   </div>
+
+    <script>
+      const togglebtn = document.querySelector('.toggle_btn');
+      const togglebtnicon = document.querySelector('.toggle_btn i');
+      const dropdownmenu =document.querySelector('.dropdown');
+  
+      togglebtn.onclick = function(){
+        dropdownmenu.classList.toggle('open');
+        const isopen=dropdownmenu.classList.contains('open');
+  
+        togglebtnicon.classList= isopen?
+        'fa-solid fa-xmark':'fa-solid fa-bars';
+      }
+     </script>
+     <script src="particles.min.js"></script>
+     <script src="app.js"></script>
+     <script src="us.js"></script>
+     <script src="bundle.js"></script>
+</body>
+</html>
