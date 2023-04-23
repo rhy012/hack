@@ -66,6 +66,83 @@
         </li>
       </section>
     </div>
+    <br><br>
+    <h2>Waste Seller</h2>
+    <br><br>
+    <form method = "POST">
+      <label for="waste"><P>Choose a Category : </P></label>
+
+<select name="waste" id="waste">
+  <option value="Paper">Paper</option>
+  <option value="Glass">Glass</option>
+  <option value="Plastic">Plastic</option>
+  <option value="E-Waste">E-Waste</option>
+</select>
+   </form>
+   <br><br>
+   <div class="form1">
+    <h2>PAPER WASTE</h2>
+    <form method="POST">
+      <label for="typep"><P>Type of Paper:</P></label>
+      <select name="typep" id="typep">
+        <option value="kraft">Corrugated/Kraft Paper</option>
+        <option value="news">Newspaper</option>
+        <option value="high">High-Grade Paper</option>
+        <option value="mixed">Mixed Paper</option>
+      </select><br><br>
+  <label for="weightp"><p class="wp">Weight :</p></label>
+  <input type="text" id="weightp" name="weightp"><br><br>
+  <input type="submit" value="Submit">
+    </form>
+   </div>
+   <div class="form2">
+    <h2>GLASS WASTE</h2>
+    <form method="POST">
+      <label for="typeg"><P>Type of Glass:</P></label>
+      <select name="typeg" id="typeg">
+        <option value="window">Window Glass</option>
+        <option value="wind">Wind Shield</option>
+        <option value="Drink">Drinking Glass</option>
+        <option value="mixed">Mixed Glass</option>
+      </select><br><br>
+  <label for="weightg"><p class="wg">Weight :</p></label>
+  <input type="text" id="weightg" name="weightg"><br><br>
+  <input type="submit" value="Submit">
+    </form>
+   </div>
+   <div class="form3">
+    <h2>PLASTIC WASTE</h2>
+    <form method="POST">
+      <label for="typepl"><P>Type of Plastic:</P></label>
+      <select name="typepl" id="typepl">
+        <option value="pet">Bottles of Water</option>
+        <option value="hdpe">Shampoo Bottles/Helmet</option>
+        <option value="pvc">Water Pipes</option>
+        <option value="ldpe">Shopping Bags/Trash Bag</option>
+      </select><br><br>
+  <label for="weightpl"><p class="wp">Weight :</p></label>
+  <input type="text" id="weightpl" name="weightpl"><br><br>
+  <input type="submit" value="Submit">
+    </form>
+   </div>
+   <div class="form4">
+    <h2>PAPER WASTE</h2>
+    <form method="POST">
+      <label for="typee"><P>Type of E-Waste:</P></label>
+      <select name="typee" id="typee">
+        <option value="laptop">Laptop</option>
+        <option value="computer">Computer</option>
+        <option value="mobile">Mobile</option>
+        <option value="refri">Refrigerator</option>
+        <option value="micro">MicroWave</option>
+        <option value="oth">Others</option>
+      </select><br><br>
+  <label for="weighte"><p class="wp">Weight :</p></label>
+  <input type="text" id="weighte" name="weighte"><br><br>
+  <input type="submit" value="Submit">
+    </form>
+   </div>
+
     <script>
       const togglebtn = document.querySelector('.toggle_btn');
       const togglebtnicon = document.querySelector('.toggle_btn i');
